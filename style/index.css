@@ -136,4 +136,15 @@ article header div{
     background-image: url(../img/img-3.jpg);
 }
 
+/* Footer */
+.container_footer{
+    max-width: 1200px;
+    margin: 45px auto;
+    
+    text-align: center;
+    font-weight: 100;
+}
 
+#heart{
+    color: red;
+}

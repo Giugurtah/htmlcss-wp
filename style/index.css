@@ -5,35 +5,81 @@
     padding: 0;
 }
 
+body{
+    font-family: sans-serif;
+}
+
 .clearfix::after {
     content: "";
     display: table;
     clear: both;
 }
 
-/* Header */
-.container{
-    max-width: 1200px;
-    margin: 0 auto;
+.layback{
+    height: 100%;
+    background-color: rgba(107, 107, 107, 0.3);
 }
 
-.logo img{
+.round{
+    border-radius: 10px;
+}
+
+/* Header */
+.container_header {
+    max-width: 1200px;
+    margin: 3px auto 0;
+}
+
+#logo{
     height: 70px;
     border-right: 1px solid gray;
     padding-right: 20px;
 }
 
-.container li{
+.container_header li{
     display: inline-block;
     list-style-type: none;
 
     font-size: 20px;
-    font-family: sans-serif;
     font-weight: 200;
     color: rgb(167, 167, 167);
     margin-right: 10px;
 }
 
-.container nav{
+.container_header nav{
     margin: 40px 0;
+}
+
+/* Main */
+.container_main {
+    max-width: 1200px;
+    margin: 3px auto 0;
+}
+
+.spotlight {
+    width: 100%;
+    height: 500px;
+    background-image: url(../img/banner.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.spotlight_text{
+    color: white;
+    width: 600px;
+}
+
+.spotlight .layback{
+    padding-left: 55px;
+    padding-top: 325px;
+}
+
+.spotlight h1{
+    font-weight: 300;
+    font-size: 33px;
+}
+
+.spotlight_text div{
+    text-align: justify;
+    font-size: 17px;
 }

@@ -34,10 +34,8 @@ body{
     margin: 3px auto 0;
 }
 
-#logo{
-    height: 70px;
-    border-right: 1px solid gray;
-    padding-right: 20px;
+.container_header nav{
+    margin: 40px 0;
 }
 
 .container_header li{
@@ -50,8 +48,15 @@ body{
     margin-right: 10px;
 }
 
-.container_header nav{
-    margin: 40px 0;
+.container_header li:last-of-type{
+    margin-right: 0;
+}
+
+
+#logo{
+    height: 70px;
+    border-right: 1px solid gray;
+    padding-right: 20px;
 }
 
 /* Main */
@@ -67,14 +72,14 @@ body{
     background-position: center;
 }
 
-.spotlight_text{
-    color: white;
-    width: 600px;
-}
-
 .spotlight .layback{
     padding-left: 55px;
     padding-top: 325px;
+}
+
+.spotlight_text{
+    color: white;
+    width: 600px;
 }
 
 .spotlight h1{
@@ -82,30 +87,32 @@ body{
     font-size: 33px;
 }
 
-.spotlight_text div{
+.spotlight_text .subtext{
     text-align: justify;
     font-size: 17px;
 }
 
 /* Section dell'articolo */
+/* Header articolo */
 article header h2{
     font-size: 45px;
 }
-article header div{
+
+article header .subtext{
     font-size: 20px;
     color: rgb(167, 167, 167);
 }
 
+/* Section dei singoli articoli */
 .column {
     float: left;
     width: 20%;
-    height: 100%;
-    margin-top: 45px;
 }
 
 .column:nth-of-type(2){
     width: calc(60% - 40px);
-    margin: 45px 20px 0;
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .column_pic{
@@ -114,14 +121,14 @@ article header div{
     background-size: cover;
 }
 
-.column p{
-    color:rgb(167, 167, 167);
-    font-size: 18px;
-}
-
 .column h3{
     font-weight: 500;
     margin: 20px 0;
+}
+
+.column p{
+    color:rgb(167, 167, 167);
+    font-size: 18px;
 }
 
 #pic1{
@@ -139,7 +146,8 @@ article header div{
 /* Footer */
 .container_footer{
     max-width: 1200px;
-    margin: 45px auto;
+    margin-left: auto;
+    margin-right: auto;
     
     text-align: center;
     font-weight: 100;

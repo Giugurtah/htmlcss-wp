@@ -20,8 +20,10 @@ body{
     background-color: rgba(107, 107, 107, 0.3);
 }
 
-.round{
+.img_round{
     border-radius: 10px;
+    background-position: center;
+    background-size: cover;
 }
 
 .margin{
@@ -68,8 +70,6 @@ body{
 .spotlight {
     height: 500px;
     background-image: url(../img/banner.jpg);
-    background-size: cover;
-    background-position: center;
 }
 
 .spotlight .layback{
@@ -117,8 +117,6 @@ article header .subtext{
 
 .column_pic{
     height: 200px;
-    background-position: center;
-    background-size: cover;
 }
 
 .column h3{
